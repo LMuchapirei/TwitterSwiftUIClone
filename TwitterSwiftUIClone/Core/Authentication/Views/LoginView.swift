@@ -14,24 +14,11 @@ struct LoginView: View {
         // parent container
         VStack {
             // header view
-            VStack (alignment: .leading){
-                 HStack{ Spacer()}
-                Text("Hello.")
-                    .font(.largeTitle)
-                    .fontWeight(.semibold)
-                Text("Welcome Back")
-                    .font(.largeTitle)
-                    .fontWeight(.semibold)
-            }
-            .frame(height: 260)
-            .padding(.leading)
-            .background(Color(.systemBlue))
-            .foregroundColor(.white)
-            .clipShape(RoundedShape(corners: [.bottomRight]))
+            AuthHeaderView(headerTitleText1: "Hello.", headerTitleText2: "Welcome Back")
             
             VStack (spacing: 40) {
-                TextField("Email",text: $email)
-                TextField("Password",text:$password)
+                CustomTextInputField(imageName: "envelope", placeholderText: "Email", text: $email)
+                CustomTextInputField(imageName: "lock", placeholderText: "Password", text: $password)
             }
             .padding(.horizontal,32)
             .padding(.top,44)
@@ -41,12 +28,44 @@ struct LoginView: View {
                 NavigationLink {
                     Text("Reset password view...")
                 } label: {
-                    Text("Forgot Password")
+                    Text("Forgot Password?")
+                        .font(.caption)
+                        .fontWeight(.semibold)
+                        .foregroundColor(Color(.systemBlue))
+                        .padding(.top)
+                        .padding(.trailing,24)
                 }
             }
+            Button{
+                print("Sign in here...")
+            }label: {
+                Text("Sign In")
+                    .font(.headline)
+                    .foregroundColor(.white)
+                    .frame(width: 340,height: 50)
+                    .background(Color(.systemBlue))
+                    .clipShape(Capsule())
+                    .padding()
+            }
+            .shadow(color: .gray.opacity(0.5), radius: 10,x: 0,y: 0)
+            
             Spacer()
+            NavigationLink{
+                RegistrationView()
+                    .navigationBarHidden(true)
+            } label: {
+                HStack {
+                    Text("Don't have an account?")
+                        .font(.footnote)
+                    Text("Sign Up")
+                        .font(.body)
+                        .fontWeight(.semibold)
+                }
+            }.padding(.bottom,32)
+                .foregroundColor(Color(.systemBlue))
         }
         .ignoresSafeArea()
+        .navigationBarHidden(true)
     }
 }
 

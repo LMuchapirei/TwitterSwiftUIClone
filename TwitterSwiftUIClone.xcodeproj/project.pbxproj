@@ -29,6 +29,8 @@
 		87FF67BE29D0E945002B004F /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FF67BD29D0E945002B004F /* LoginView.swift */; };
 		87FF67C029D0E959002B004F /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FF67BF29D0E959002B004F /* RegistrationView.swift */; };
 		87FF67C229D0EC50002B004F /* RoundedShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FF67C129D0EC50002B004F /* RoundedShape.swift */; };
+		87FF67C429D18AB5002B004F /* CustomTextInputField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FF67C329D18AB5002B004F /* CustomTextInputField.swift */; };
+		87FF67C729D1943C002B004F /* AuthHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FF67C629D1943C002B004F /* AuthHeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +58,8 @@
 		87FF67BD29D0E945002B004F /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		87FF67BF29D0E959002B004F /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 		87FF67C129D0EC50002B004F /* RoundedShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedShape.swift; sourceTree = "<group>"; };
+		87FF67C329D18AB5002B004F /* CustomTextInputField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextInputField.swift; sourceTree = "<group>"; };
+		87FF67C629D1943C002B004F /* AuthHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthHeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,10 +154,12 @@
 		87E91D1829CC38660012FC45 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				87FF67C529D193FC002B004F /* Authentication */,
 				87E91D3629CC81DC0012FC45 /* Users */,
 				87E91D1E29CC3DDA0012FC45 /* Tweets */,
 				87FF67B829D0E490002B004F /* TextArea.swift */,
 				87FF67C129D0EC50002B004F /* RoundedShape.swift */,
+				87FF67C329D18AB5002B004F /* CustomTextInputField.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -347,6 +353,14 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		87FF67C529D193FC002B004F /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				87FF67C629D1943C002B004F /* AuthHeaderView.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -418,6 +432,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				87E91D2D29CC4DAC0012FC45 /* MessagesView.swift in Sources */,
+				87FF67C429D18AB5002B004F /* CustomTextInputField.swift in Sources */,
 				87E91D3129CC4F400012FC45 /* ProfileView.swift in Sources */,
 				87E91D3329CC5D660012FC45 /* TweetFileViewModel.swift in Sources */,
 				87E91D3F29CC87270012FC45 /* SideMenuOptionRowView.swift in Sources */,
@@ -432,6 +447,7 @@
 				87FF67BE29D0E945002B004F /* LoginView.swift in Sources */,
 				87FF67C029D0E959002B004F /* RegistrationView.swift in Sources */,
 				87FF67B729D0E2B3002B004F /* NewTweetView.swift in Sources */,
+				87FF67C729D1943C002B004F /* AuthHeaderView.swift in Sources */,
 				87FF67C229D0EC50002B004F /* RoundedShape.swift in Sources */,
 				87E91D3829CC81ED0012FC45 /* UserRowView.swift in Sources */,
 				87E91D2329CC4AFF0012FC45 /* MainTabView.swift in Sources */,
