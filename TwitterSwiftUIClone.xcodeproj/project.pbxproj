@@ -36,6 +36,7 @@
 		87FF67CF29D1C82B002B004F /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 87FF67CE29D1C82B002B004F /* FirebaseFirestore */; };
 		87FF67D129D1C82B002B004F /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 87FF67D029D1C82B002B004F /* FirebaseFirestoreSwift */; };
 		87FF67D329D1C82B002B004F /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 87FF67D229D1C82B002B004F /* FirebaseStorage */; };
+		87FF67D729D1CBC3002B004F /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FF67D629D1CBC3002B004F /* AuthViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +67,7 @@
 		87FF67C329D18AB5002B004F /* CustomTextInputField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextInputField.swift; sourceTree = "<group>"; };
 		87FF67C629D1943C002B004F /* AuthHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthHeaderView.swift; sourceTree = "<group>"; };
 		87FF67C829D19C7E002B004F /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		87FF67D629D1CBC3002B004F /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -351,6 +353,7 @@
 		87FF67BB29D0E922002B004F /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				87FF67D629D1CBC3002B004F /* AuthViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -469,6 +472,7 @@
 				87FF67C029D0E959002B004F /* RegistrationView.swift in Sources */,
 				87FF67B729D0E2B3002B004F /* NewTweetView.swift in Sources */,
 				87FF67C729D1943C002B004F /* AuthHeaderView.swift in Sources */,
+				87FF67D729D1CBC3002B004F /* AuthViewModel.swift in Sources */,
 				87FF67C229D0EC50002B004F /* RoundedShape.swift in Sources */,
 				87E91D3829CC81ED0012FC45 /* UserRowView.swift in Sources */,
 				87E91D2329CC4AFF0012FC45 /* MainTabView.swift in Sources */,
