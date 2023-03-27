@@ -26,6 +26,9 @@
 		87E91D4329CC8AE10012FC45 /* UserStatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E91D4229CC8AE10012FC45 /* UserStatsView.swift */; };
 		87FF67B729D0E2B3002B004F /* NewTweetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FF67B629D0E2B3002B004F /* NewTweetView.swift */; };
 		87FF67B929D0E490002B004F /* TextArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FF67B829D0E490002B004F /* TextArea.swift */; };
+		87FF67BE29D0E945002B004F /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FF67BD29D0E945002B004F /* LoginView.swift */; };
+		87FF67C029D0E959002B004F /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FF67BF29D0E959002B004F /* RegistrationView.swift */; };
+		87FF67C229D0EC50002B004F /* RoundedShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FF67C129D0EC50002B004F /* RoundedShape.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +53,9 @@
 		87E91D4229CC8AE10012FC45 /* UserStatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStatsView.swift; sourceTree = "<group>"; };
 		87FF67B629D0E2B3002B004F /* NewTweetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTweetView.swift; sourceTree = "<group>"; };
 		87FF67B829D0E490002B004F /* TextArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextArea.swift; sourceTree = "<group>"; };
+		87FF67BD29D0E945002B004F /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		87FF67BF29D0E959002B004F /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		87FF67C129D0EC50002B004F /* RoundedShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedShape.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +133,7 @@
 		87E91D1729CC38310012FC45 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				87FF67BA29D0E916002B004F /* Authentication */,
 				87E91D1829CC38660012FC45 /* Components */,
 				87FF67B329D0E28F002B004F /* UploadTweet */,
 				87E91D3929CC86F10012FC45 /* SideMenu */,
@@ -146,6 +153,7 @@
 				87E91D3629CC81DC0012FC45 /* Users */,
 				87E91D1E29CC3DDA0012FC45 /* Tweets */,
 				87FF67B829D0E490002B004F /* TextArea.swift */,
+				87FF67C129D0EC50002B004F /* RoundedShape.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -314,6 +322,31 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		87FF67BA29D0E916002B004F /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				87FF67BC29D0E92B002B004F /* Views */,
+				87FF67BB29D0E922002B004F /* ViewModel */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		87FF67BB29D0E922002B004F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		87FF67BC29D0E92B002B004F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				87FF67BD29D0E945002B004F /* LoginView.swift */,
+				87FF67BF29D0E959002B004F /* RegistrationView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -396,7 +429,10 @@
 				87E91D2929CC4D5D0012FC45 /* ExploreView.swift in Sources */,
 				87FF67B929D0E490002B004F /* TextArea.swift in Sources */,
 				87E91D4129CC873F0012FC45 /* SideMenuViewModel.swift in Sources */,
+				87FF67BE29D0E945002B004F /* LoginView.swift in Sources */,
+				87FF67C029D0E959002B004F /* RegistrationView.swift in Sources */,
 				87FF67B729D0E2B3002B004F /* NewTweetView.swift in Sources */,
+				87FF67C229D0EC50002B004F /* RoundedShape.swift in Sources */,
 				87E91D3829CC81ED0012FC45 /* UserRowView.swift in Sources */,
 				87E91D2329CC4AFF0012FC45 /* MainTabView.swift in Sources */,
 				87E91D2B29CC4D870012FC45 /* NotificationsView.swift in Sources */,
